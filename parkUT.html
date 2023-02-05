@@ -87,8 +87,30 @@
                                 <p>Automatic parking space detection solution is one of the smartest and most modern solutions available today. The system uses many modern technological devices to bring satisfaction to both vehicle owners and managers. The solution is applied to many parking lots and the equipment system is also increasingly improved to suit the needs. Information about parking spaces is updated every second, so you can know if the parking lot is available or not to make a decision to enter the parking lot or find the nearest other parking space.</p>
                                 <p>According to WTVG in July 2021, following the tragedy of the Surfside Condominium collapse in Florida and recent inspections for yearly maintenance, the University of Toledo expedited its preparations to remove its parking structures. An estimated 6,700 parking spaces are available following the demolition. USNews states that 80% of the 19,000 University of Toledo students lived off campus during the Fall 2020 semester. With decreased supply and ever-present demand for parking, smarter management and increased data collection in parking lots is key for universities and other organizations to better utilize and understand their parking offerings.</p>
                                 <p>The principle idea of our product is to use computer vision and AI to relay to an end user how full a parking lot is. Our product will then enable a user to plan where they will park prior to starting their commute. Our capacity data will also be available to school administrators, playing an important role in the planning of future additions to school infrastructure.</p>
-                                <p>A camera system which uses AI to detect parking lot capacity and open spaces. Real-time data is presented through an app to allow ease of finding parking. Furthermore, it will provide the shortest path to the closest available parking spot. The app will also gather data over time to predict when a lot is likely to be full and will inform the user of any lot closures. Our statistics will also be available to the school, allowing detailed parking lot information to be used in strategic planning for future construction.
-                                </p>
+                                <p>A camera system which uses AI to detect parking lot capacity and open spaces. Real-time data is presented through an app to allow ease of finding parking. Furthermore, it will provide the shortest path to the closest available parking spot. The app will also gather data over time to predict when a lot is likely to be full and will inform the user of any lot closures. Our statistics will also be available to the school, allowing detailed parking lot information to be used in strategic planning for future construction.</p>
+                                <p>The high-definition webcam could have been positioned from the top or side of the parking lot to offer a view of the region and the scene that is being evaluated. The ParkingSpacePicker would allow users to manually label each parking place by delineating it with a quadrilateral. The technique then turns the pictures into grayscale. Then, using edge detection techniques like adaptive threshold, a binary-one version is produced. Through the use of morphological techniques like dilation, a large portion of the noise in the binary image is removed. The pixels' positions and shapes are described in this binary version. The quantity of pixels in the captured image are used to assess the visual quality of the computer. A whole image is created using all pixels. The algorithm may use this feature to assess the occupancy of a given parking spot. In other words, the image will be black with the item of interest—in this example, a car—transformed into white.</p>
+                                
+                                <div class="row">
+                                    <div class="col-5">
+                                        <img src="img/projects/parkUT/normal.png" alt="">
+                                    </div>
+                                    <div class="col-2">
+                                        <span style="text-align: center; align-items: center; width: 100%; height: 100%; padding: 50px 0; font-size: 25px;">&#8594</span>                                        
+                                    </div>
+                                    <div class="col-5">
+                                        <img src="img/projects/parkUT/black_white.png" alt="">
+                                    </div>
+                                </div>           
+                                <p> <br> Then, to identify and indicate the cars, the image's abnormality is calculated. The presence or absence of an automobile in a parking lot is then determined by computing the threshold value. The block is marked free if the computed value is lower than the threshold value. If not, it is occupied. The computation will be repeated and results sent to the database. </p>            
+                                <div class="row">
+                                    <div class="col-2">
+                                    </div>
+                                    <div class="col-8">
+                                        <img src="img/projects/parkUT/result.png" alt="">                                        
+                                    </div>
+                                    <div class="col-2">
+                                    </div>
+                                </div>  
                             </div>
 
                             <div class="form mt-100 mb-80">
